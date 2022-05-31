@@ -1,0 +1,124 @@
+/* общие настройки контейнера */
+
+.body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+    margin: 0;
+}
+
+/* Шапка */
+
+.header {
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+    font-size: 5vh;
+    margin: 50px auto 30px;
+
+}
+
+.text-header {
+    display: flex;
+    margin: auto;
+}
+
+/* Изображение */
+
+#link1,
+#link2 {
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.image-div {
+    display: grid;
+    grid-template-columns: auto;
+    height: 50vh;
+    width: 100%;
+    max-width: 50vh;
+    overflow: hidden;
+    border-radius: 20px;
+    object-fit: contain;
+
+}
+
+
+.image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+
+/* Кнопка и текст */
+
+.text {
+    font-size: 3vh;
+    font-weight: 400;
+    text-align: center;
+    color: black;
+}
+
+.button {
+    display: inline-block;
+    width: 10vh;
+    border: 2px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 20px auto 20px;
+    font-size: 2vh;
+    font-weight: 500;
+    padding: 5px;
+    background-color: antiquewhite;
+    animation: pulse 3s infinite;
+
+}
+
+.button:hover {
+    animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+
+
+.places {
+    padding-top: 20px;
+    color: black;
+    text-decoration: none;
+
+}
+
+/* Подвал */
+
+.footer {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
